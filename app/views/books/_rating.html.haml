@@ -1,0 +1,8 @@
+- if rating.state == 'approved'
+  %tr.active
+    %td.small
+      %span.stars= "#{(rating.rate / 2.0)}"
+      = rating.decorate.author_and_date
+  %tr
+    %td
+      = rating.review.to_s

@@ -1,0 +1,8 @@
+- order_summary_cols_hash(item).each do |key, val|
+  %tr
+  %td{colspan: '2'}
+  %td{colspan: '2'}
+    .summary-left-col
+      = key
+  %td.summary-right-col
+    = val

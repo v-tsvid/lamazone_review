@@ -1,0 +1,23 @@
+.container-fluid
+  .row-fluid
+    .col-md-9
+      .navigation
+        - if category_show
+          = link_to t(:home), root_path
+          %span >>
+          = link_to t(:shop), books_path
+          %span >> 
+          = link_to "#{t "categories.#{category.title}"}", category_path(category)
+      
+          %h4= "#{t "categories.category"} - #{t "categories.#{category.title}"}"
+        - else
+          %h4= "#{t "categories.category"} - #{t "categories.all"}"
+        = render @books
+
+    = render partial: 'categories/categories'
+.container-fluid
+  .row-fluid 
+    .col-md-9
+      .pagin
+        = paginate @books
+

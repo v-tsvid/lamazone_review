@@ -1,0 +1,162 @@
+uk:
+  hello: "Привіт"
+  in_lamazone: "Тепер ти у LamaZone!"
+  home: "ГОЛОВНА"
+  shop: "МАГАЗИН"
+  cart: "КОШИК"
+  is_empty: "НІЧОГО"
+  admin_panel: "ПАНЕЛЬ АДМІНІСТРАТОРА"
+  settings: "НАЛАШТУВАННЯ"
+  orders: "ЗАМОВЛЕННЯ"
+  sign_up: "РЕЄСТРАЦІЯ"
+  sign_in: "УВІЙТИ"
+  sign_out: "ВИЙТИ"
+  add_to_cart: "Додати у кошик"
+  add_review: "Залишити відгук"
+  reviews: "Відгуки"
+  rating: 'Оцінка'
+  text_review: 'Текст відгука'
+  add: "Додати"
+  cancel: 'Відмінити'
+  new_review_for: 'Новий відгук на'
+  or: "або"
+  by: "від"
+  by_author: ", "
+  by_author_1: ""
+  shop_by: "ЗА КАТЕГОРІЯМИ"
+  confirm: "Ви впевнені?"
+  shipping_method: "СПОСІБ ДОСТАВКИ"
+  c_card: "КРЕДИТНА КАРТА"
+  ordr: "ЗАМОВЛЕННЯ"
+
+  categories:
+    category: 'Категорія'
+    'all': 'Усі'
+    'bestsellers': 'Бестселери'
+    'other': 'Інші'
+
+  settings_page:
+    settings: "Налаштування"
+    save: "ЗБЕРЕГТИ"
+    email_caption: "ЕЛ. ПОШТА"
+    password: "ПАРОЛЬ"
+    remove_acc: "ВИДАЛЕННЯ ПРОФІЛЮ"
+    remove_acc_button: "ВИДАЛІТЬ МІЙ ПРОФІЛЬ"
+    rem_acc_understand: "Я розумію, що усі мох дані будуть втрачені"
+    email: "ел. пошта"
+    old_password: "old password"
+    new_password: "new password"
+
+  sign_in_page:
+    as_admin: 'Увійти як адміністратор'
+    sign_in: "Увійти"
+    remember_me: "запам'ятати мене"
+    have_account: 'Вже зареєстровані?'
+    dont_have_account: "Ще не зареєстровані?"
+    sign_up: 'Зареєструватися'
+    email: 'ел. пошта'
+    password: 'пароль'
+    password_confirmation: 'підтвердження паролю'
+
+  orders_page:
+    no_orders: "ЗАМОВЛЕНЬ НЕМАЄ"
+    number: "НОМЕР"
+    completed: "ВИКОНАНО"
+    total: "ВСЬОГО"
+    not_completed: "не виконано"
+    view: "Переглянути"
+    in_progress: "У ПРОЦЕСІ"
+    processing: "В ОБРОБЦІ"
+    shipping: "ДОСТАВКА"
+    completed: "ВИКОНАНО"
+    canceled: "ВІДМІНЕНО"
+
+  addresses:
+    billing_address: "АДРЕСА ПЛАТНИКА"
+    shipping_address: "АДРЕСА ОТРИМУВАЧА"
+    firstname: "Ім'я"
+    lastname: "Прізвище"
+    phone: "Телефон"
+    address1: "Адреса (р. 1)"
+    address2: "Адреса (р. 2)"
+    city: "Нас. пункт"
+    zipcode: "Пошт. індекс"
+    use_billing: "Скопіювати адресу платника"
+
+  credit_card:
+    firstname: "Ім'я"
+    lastname: "Прізвище"
+    number: "Номер"
+    expiration_month: "Термін дії, місяць"
+    expiration_year: "Термін дії, рік"
+    cvv: "CVV"
+
+  checkout:
+    shopping_cart: "КОШИК"
+    continue_shopping: "ПРОДОВЖИТИ КУПУВАТИ"
+    remove: "Х"
+    empty_cart: "ВИДАЛИТИ ВСЕ"
+    update_cart: "ОНОВИТИ"
+    checkout: "ЗАМОВИТИ"
+    coupon_code: "Код купона"
+    save_and_continue: "ЗБЕРЕГТИ І ПРОДОВЖИТИ"
+    edit: "ред."
+    place_order: "ЗАМОВИТИ"
+    back_to_store: "НАЗАД ДО МАГАЗИНУ"
+    to_cart: "ДО КОШИКА"
+
+    items:
+      book: "КНИГА"
+      price: "ВАРТІСТЬ"
+      qty: "К-СТЬ"
+      total: "ВСЬОГО"
+
+    order:
+      summary: "ЗАМОВЛЕННЯ"
+      subtotal: "ВСЬОГО"
+      discount: "ЗНИЖКА"
+      shipping: "ДОСТАВКА"
+      total: "ДО СПЛАТИ"
+
+      full:
+        bil_address: "Адр. платника"
+        ship_address: "Адр. отримувача"
+        shipment: "Доставка"
+        payment: "Оплата"
+
+    tabs:
+      address: "АДРЕСИ"
+      shipment: "ДОСТАВКА"
+      payment: "ОПЛАТА"
+      confirm: "ПІДТВЕРДЖЕННЯ"
+      complete: "ЗАВЕРШЕННЯ"
+
+  controllers:
+    confirm_risks: 'Ви маєте підтвердити, що розумієте ризик'
+    address_created: 'Адресу було успішно створено' 
+    address_updated: 'Адресу було успішно оновлено'
+    no_page: "Такої сторінки не існує"
+    checkout_failed: "Помилка при замовленні"
+    cart_is_empty: "Ваш кошик порожній"
+    added: "додано до кошика"
+    removed: "видалено з кошика"
+    rating_created: "Ваш відгук скоро з'явиться на сайті"
+    failed_to_remove_book: "Помилка при видаленні книги"
+    
+  views:
+    pagination:
+      first: "&laquo; Початок"
+      last: "Кінець &raquo;"
+      previous: "&lsaquo; Назад"
+      next: "Вперед &rsaquo;"
+  
+  defaults: &defaults
+    month_names:
+      [~, січня, лютого, березня, квітня, травня, червня, липня, серпня, вересня, жовтня, листопада, грудня]
+    formats:
+      default: "%d %B %Y"
+      short: "%d %m %Y"
+  date:
+    <<: *defaults
+  time:
+    <<: *defaults

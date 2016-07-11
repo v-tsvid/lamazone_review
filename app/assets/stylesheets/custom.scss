@@ -1,0 +1,228 @@
+$textLightDefault: #F2F2CB;
+$textLightLighter: #F2F2E9;
+
+$bgLightDefault: #FFFFE6;
+
+$bgDarkDefault: #422020;
+$bgDarkLighter: #523535;
+
+$textDarkDefault: #966D33;
+$textDarkLighter: #BA9765;
+
+/*.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}*/
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 61px;
+  height: 61px;
+  padding-top: 0;
+}
+
+.navbar-inverse .navbar-text {
+  vertical-align: middle;
+  line-height: 31px;
+  height: 31px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.nowrap {
+  white-space:nowrap;
+}
+
+.form-control {
+  min-width: 70px;
+}
+
+.col-centered {
+  text-align: center;
+}
+
+.col-righted {
+  text-align: right;
+}
+
+.cart-price-col, .cart-quantity-col, .cart-total-col {
+  text-align: right;
+}
+
+.cart-title-col {
+  width: 70%;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.table.orders-list {
+  th {
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+}
+
+.table > tbody > tr > td {
+  vertical-align: baseline;
+}
+
+table > tbody > tr > td {
+  vertical-align: baseline;
+}
+
+th {
+  text-align: center;
+}
+
+/*.btn.btn-success-custom {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}*/
+
+.cart-left-col {
+  font-weight: bolder;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.cart-right-col-thin {
+  text-align: right;
+}
+
+.cart-right-col {
+  font-weight: bolder;
+  text-align: right;
+}
+
+.summary-left-col {
+  font-weight: bolder;
+  width: 90px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.summary-right-col {
+  padding-left: 20px;
+  text-align: right;
+}
+
+/*.co-summary-left-col {
+  font-weight: bolder;
+  text-align: right;
+  margin-right: 10px;
+}*/
+
+a {
+  color: $textDarkDefault;
+}
+
+.row-fluid {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+
+span.stars, span.stars span {
+  display: inline-block;
+  background: image-url("dharmacakras.png") 0 -16px repeat-x;
+  width: 80px;
+  height: 16px;
+}
+
+span.stars span {
+  background-position: 0 0;
+}
+
+.image {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.image-thumb {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+.image-xs {
+  padding-top: 3px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+}
+
+.book-form-left {
+  text-align: left;
+}
+
+.book-form-right {
+  text-align: right;
+}
+
+form {
+  padding-bottom: 50px;
+}
+
+body {
+  background-color: $bgLightDefault;
+}
+
+.book-col {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.pagin {
+  text-align: center;
+}
+
+.navbar-inverse {
+  background-color: $bgDarkDefault;
+  border-color: $bgDarkDefault;
+
+  .navbar-brand {
+    color: $textLightDefault;
+    &:hover, &:focus { 
+      color: $textLightDefault; 
+    }
+  }
+
+  .navbar-text {
+    color: $textLightDefault; 
+  }
+
+  .navbar-nav {
+    > li {
+      > a {
+        color: $textLightDefault;
+        &:hover,  &:focus {
+          color: $textLightLighter; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $textLightLighter;
+        background-color: $bgDarkLighter; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $textLightLighter;
+        background-color: $bgDarkLighter; }}}
+}
+
+.carousel {
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+

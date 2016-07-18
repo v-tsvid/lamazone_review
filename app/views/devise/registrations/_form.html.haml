@@ -1,0 +1,25 @@
+.form
+  .form-group
+    - [:firstname, 
+       :lastname, 
+       :phone, 
+       :address1, 
+       :address2, 
+       :city, 
+       :zipcode].each do |item|
+      = render partial: 'text_field', locals: {f: f, sym: item}
+
+  .field
+    = f.hidden_field :billing_address_for_id
+
+  .field
+    = f.hidden_field :shipping_address_for_id
+
+  .field
+    = f.select(:country_id, options_for_select(countries_for_select, kountry), 
+      {}, {class: "form-control"})
+    %br/
+    %br/
+
+    .actions
+      = f.submit t("settings_page.save"), class: "btn btn-warning"

@@ -1,14 +1,7 @@
 require 'rails_helper'
+require 'shared/views/shared_books_view_specs'
 
 RSpec.describe "books/show", type: :view do
-
-  shared_context "stub helpers and render" do
-    before do
-      allow(view).to receive(:cool_price)
-      allow(view).to receive(:cool_date)
-      render 
-    end
-  end
 
   before do 
     @book = assign(:book, FactoryGirl.create(:book))
@@ -60,7 +53,10 @@ RSpec.describe "books/show", type: :view do
       subject { @book.ratings[0] }
 
       it "displays rating rate" do
-        expect(rendered).to have_content subject.rate.to_s
+        expect(rendered).to have_css(
+          "//input[@value='#{subject.rate}'][@checked='checked']")
+
+
       end
 
       it "displays rating review" do
@@ -80,7 +76,8 @@ RSpec.describe "books/show", type: :view do
       subject { @book.ratings[1] }
 
       it "does not display rating rate" do
-        expect(rendered).not_to have_content subject.rate.to_s
+        expect(rendered).not_to have_css(
+          "//input[@value='#{subject.rate}'][@checked='checked']")
       end
 
       it "does not display rating review" do

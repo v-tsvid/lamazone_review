@@ -1,24 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello"
   in_lamazone: "You're in LamaZone now!"
@@ -49,6 +28,9 @@ en:
   shipping_method: "SHIPPING METHOD"
   c_card: "CREDIT CARD"
   ordr: "ORDER"
+  firstname: 'Firstname:'
+  lastname: 'Lastname:'
+  bio: 'Biography:'
   
   categories:
     category: 'Category'
@@ -65,8 +47,8 @@ en:
     remove_acc_button: "PLEASE REMOVE MY ACCOUNT"
     rem_acc_understand: "I understand that all data will be lost"
     email: 'email'
-    old_password: "old password"
-    new_password: "new password"
+    old_password: "old password *"
+    new_password: "new password *"
 
   sign_in_page:
     as_admin: 'Sign in as Admin'
@@ -95,22 +77,22 @@ en:
   addresses:
     billing_address: "BILLING ADDRESS"
     shipping_address: "SHIPPING ADDRESS"
-    firstname: "Firstname"
-    lastname: "Lastname"
-    phone: "Phone"
-    address1: "Address (str. 1)"
+    firstname: "Firstname *"
+    lastname: "Lastname *"
+    phone: "Phone *"
+    address1: "Address (str. 1) *"
     address2: "Address (str. 2)"
-    city: "City"
-    zipcode: "Zipcode"
+    city: "City *"
+    zipcode: "Zipcode *"
     use_billing: "Use billing address"
 
   credit_card:
-    firstname: "Firstname"
-    lastname: "Lastname"
-    number: "Number"
-    expiration_month: "Expiration month"
-    expiration_year: "Expiration year"
-    cvv: "CVV"
+    firstname: "Firstname *"
+    lastname: "Lastname *"
+    number: "Number *"
+    expiration_month: "Expiration month *"
+    expiration_year: "Expiration year *"
+    cvv: "CVV *"
 
   checkout:
     shopping_cart: "SHOPPING CART"
@@ -125,6 +107,11 @@ en:
     place_order: "PLACE ORDER"
     back_to_store: "GO BACK TO STORE"
     to_cart: "GO TO CART"
+    recent_completed_order: "Your recent completed order"
+    proceed_from_step: "Please proceed checkout from this step"
+    no_completed_orders: "You have no completed orders"
+    no_orders_to_confirm: "You have no orders to confirm"
+    checkout_first: "Please checkout first"
 
     items:
       book: "BOOK"
@@ -136,8 +123,8 @@ en:
       summary: "ORDER SUMMARY"
       subtotal: "SUBTOTAL"
       discount: "DISCOUNT"
-      shipping: "SHIPPING"
-      total: "TOTAL"
+      shipping_price: "SHIPPING"
+      total_price: "TOTAL"
 
       full:
         billing_address: "Billing address"
@@ -161,6 +148,7 @@ en:
     cart_is_empty: "Your cart is empty"
     added: "was added to the cart"
     removed: "was removed from the cart"
+    updated: "Cart was successfully updated"
     rating_created: 'Rating was successfully created. It will be available soon'
     failed_to_remove_book: "Can't remove book"
 
@@ -170,6 +158,9 @@ en:
       last: "Last &raquo;"
       previous: "&lsaquo; Prev"
       next: "Next &rsaquo;"
+
+  unauthorized: 
+    default: 'You are not authorized to access this page.'
 
   defaults: &defaults
     formats:
